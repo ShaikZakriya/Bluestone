@@ -7,7 +7,7 @@ public class operaters {
 	public static void main(String[] args) {
 		
 		Even_Odd();
-        //logical_operator();
+       //logical_operator();
 		
 	}
 	

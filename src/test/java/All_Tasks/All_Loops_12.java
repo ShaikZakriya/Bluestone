@@ -20,9 +20,7 @@ public class All_Loops_12 {
             System.out.println("Even");        
         }
        
-      
-	
-	}
+   }
 
 
 	private static void Fizz_Buzz() {
