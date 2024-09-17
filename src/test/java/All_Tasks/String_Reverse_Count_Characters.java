@@ -7,7 +7,7 @@ public class String_Reverse_Count_Characters {
 	public static void main(String[] args) {
 		
            Reverse_Your_Name();
-           Count_Characters();
+           //Count_Characters();
 	}
 
 	private static void Count_Characters() {
