@@ -11,8 +11,25 @@ public class Dynamic_Web_Table_16 {
 
 	public static void main(String[] args) {
 	    
-		//Dynamic_Web_Table();
-		Dynamic_Web_Table1();
+	     // Dynamic_Web_Table();
+		//Dynamic_Web_Table1();
+	      
+	 NewTask();
+	}
+
+	private static void NewTask() {
+	
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.w3schools.com/html/html_tables.asp");
+		//table[@class='ws-table-all']
+		List<WebElement> Rows = driver.findElements(By.xpath("//table[@class='ws-table-all']//tr"));
+	    System.out.println("Number of Rows :" +Rows.size());
+		
+	    List<WebElement> Columns = driver.findElements(By.xpath("//table[@class='ws-table-all']//td"));
+	    System.out.println("Number of Columns :" +Columns.size());
+	    
+		driver.quit();
 	}
 
 	private static void Dynamic_Web_Table1() {
@@ -39,29 +56,19 @@ public class Dynamic_Web_Table_16 {
 	    	   
 	    
 	      
-	  WebElement Target = driver.findElement(By.xpath("//table[@class='dataTable']//tr["+i+"]//td["+j+"]"));
-	    String Text = Target.getText();
-	    System.out.println(Text);
-	    
-	    if(Text.equals("Apollo Hospitals"))
-	    {
-	    	Target.click();
 	    }
-	         driver.close();
-	    }
-	    
- }
-	       
-	       
-	
-	
-	
+
 	}
+	       
+	       
+}
 
 	    private static void Dynamic_Web_Table() {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		
+		
 		
 		driver.get("https://demo.guru99.com/test/web-table-element.php");	
 		List<WebElement> Rows = driver.findElements(By.xpath("//table[@class='dataTable']//tr"));
@@ -69,7 +76,8 @@ public class Dynamic_Web_Table_16 {
 		
 		List<WebElement> Columns = driver.findElements(By.xpath("//table[@class='dataTable']//tr[1]//td"));
 		System.out.println("Number of Columns: " +Columns.size());
-		//driver.close();
+		
+		driver.close();
 		
 		for(int i=1; i<=Rows.size(); i++)
 		{
@@ -82,19 +90,25 @@ public class Dynamic_Web_Table_16 {
 		  System.out.println(text);
 		
 		 
-		  if(text.equals("Apollo Hospitals"))
+		 if(text.equals("Apollo Hospitals"))
 		  {
 			  Target.click();
 		  }
 		  
 		        driver.close();
 			 
-		   }
+		   }    
 		
 		
-	}
+	}  
+		
+}
+
 
 }
 
 
-	}
+
+
+
+	
