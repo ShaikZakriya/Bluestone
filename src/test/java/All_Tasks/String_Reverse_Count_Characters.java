@@ -1,55 +1,73 @@
 package All_Tasks;
 
-import java.util.HashMap;
 
 public class String_Reverse_Count_Characters {
 
 	public static void main(String[] args) {
 		
-           Reverse_Your_Name();
-           //Count_Characters();
+		//Reverse_Your_Name();
+		//Palindrome();
+		Zakriya();
 	}
 
-	private static void Count_Characters() {
+	private static void Zakriya() {
 		
-		 String name = "ShaikZakriya";
-			
-		    HashMap<Character,Integer> map = new HashMap<Character, Integer>();
-		         
-				for(int i =0; i<name.length(); i++) {
-				    char ch = name.charAt(i);
-					if(map.containsKey(ch)) {
-					int count =map.get(ch);
-					count++;
-					map.replace(ch, count);
-					
-				}
-				else {
-				
-					map.put(ch, 1);
-				}
-			}
-		        for(Character key:map.keySet()) {
-		        	System.out.println(key+""+map.get(key));
-		        }		
+		String name = "Zakriya";
+		String reverse = "";
+		
+		int length=name.length();
+		
+		for (int i=length-1; i>0; i--)
+		{
+			reverse=reverse+name.charAt(i);
+		}
+		
+		System.out.println("Reverse string is: "+ reverse);
+		
+	
 		
 	}
 
-	private static void Reverse_Your_Name() {
+	private static void Palindrome() {
 		
-		String name = "Zakirya";
-		String result = "";
+		String name = "Zakriya";
+		String reverse = "";
 		
 		int length=name.length();
 		
 		for(int i=length-1; i>=0; i--)
 		
 		{
-			result=result+name.charAt(i);
+			reverse=reverse+name.charAt(i);
 		}
 		
-			System.out.println("Reverse string is:"+ result);
+		System.out.println("Reverse string is:"+ reverse);
 		
+	  if
+	  (name.equalsIgnoreCase(reverse))
+	  {
+		  System.out.println("The string is a palindrome");
+	  }
+	  else {
+		  System.out.println("The string is Not a palindrome");
+	  }
+	}
+
+	private static void Reverse_Your_Name() {
+		
+		String name = "Zakirya";
+		String str = "";
+		
+		
+		for(int i=name.length()-1; i>=0; i--)
+		
+		{
+			str=str+name.charAt(i);
+		}
+		
+		System.out.println("Reverse string is:"+ str);
+		
+	
 	}
 		
 } 

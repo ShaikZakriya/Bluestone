@@ -39,7 +39,7 @@ public class Dynamic_Web_Table_16 {
 	    	   
 	    
 	      
-	    WebElement Target = driver.findElement(By.xpath("//table[@class='dataTable']//tr["+i+"]//td["+j+"]"));
+	  WebElement Target = driver.findElement(By.xpath("//table[@class='dataTable']//tr["+i+"]//td["+j+"]"));
 	    String Text = Target.getText();
 	    System.out.println(Text);
 	    
@@ -50,7 +50,7 @@ public class Dynamic_Web_Table_16 {
 	         driver.close();
 	    }
 	    
-	    }
+ }
 	       
 	       
 	

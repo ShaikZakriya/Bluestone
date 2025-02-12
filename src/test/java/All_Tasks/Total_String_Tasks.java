@@ -8,12 +8,25 @@ public class Total_String_Tasks {
 
 	public static void main(String[] args) {
 		
+		String_Task();
 		//Reverse_String();
-        Count_Characters();
+        //Count_Characters();
 	    //Count_Interger_Num();
 	    //Split_The_Words();
 	    //Anagram_String(); 
 	}      
+
+	private static void String_Task() {
+	       
+        String input = "Zakriya";
+		
+		for (int i= 1; i <= input.length(); i++)
+			
+		{
+			System.out.println(input.substring(0, i));
+		}
+		
+	}
 
 	private static void Anagram_String() {
 		
