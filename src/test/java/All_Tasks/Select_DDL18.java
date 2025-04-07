@@ -25,14 +25,14 @@ public class Select_DDL18 {
 		driver.get("https://online.apsrtcpass.in/counterstupass.do");
 		
 	 
-		List<WebElement> SCC = driver.findElements(By.xpath("//select[@name='userProperties(ssctype)']"));
+		/*List<WebElement> SCC = driver.findElements(By.xpath("//select[@name='userProperties(ssctype)']"));
 		int count = SCC.size();
 		System.out.println("Number of Values : " +count);
 	
         WebElement SCC_board = driver.findElement(By.xpath("//select[@name='userProperties(ssctype)']"));
         Select sc = new Select(SCC_board);
         sc.selectByIndex(5);
-		Thread.sleep(3000);
+		Thread.sleep(3000);  */
 		
 	}
 

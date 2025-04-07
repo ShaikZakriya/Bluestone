@@ -36,10 +36,10 @@
 </dependency>
 
 	  
-	   <dependency>
+	  <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.27.0</version>
+    <version>4.28.1</version>  <!-- Latest version -->
 </dependency>
 	  
     <dependency>

@@ -51,10 +51,11 @@ public class Alerts_19 {
 		
 		driver.quit();
 		
-
+		
+		
 }
 
-	private static void Alerts_Dismiss() throws InterruptedException {
+	   private static void Alerts_Dismiss() throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

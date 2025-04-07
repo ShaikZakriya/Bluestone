@@ -8,8 +8,8 @@ public class Total_String_Tasks {
 
 	public static void main(String[] args) {
 		
-		String_Task();
-		//Reverse_String();
+		//String_Task();
+		Reverse_String();
         //Count_Characters();
 	    //Count_Interger_Num();
 	    //Split_The_Words();
@@ -121,19 +121,15 @@ public class Total_String_Tasks {
 
 	private static void Reverse_String() {
 	       
-		String name = "Zakirya";
-		String result = "";
+		String Name = "Zakirya";
+		String Reversed = "";
 		
-		int length=name.length();
-		
-		for(int i=length-1; i>=0; i--)
-		
+		for (int i = Name.length() -1; i >=0; i--)
 		{
-			result=result+name.charAt(i);
+			Reversed +=Name.charAt(i);
 		}
-		
-			System.out.println("Reverse string is:"+ result);
-		
+	          
+		      System.out.println("Reversed: " + Reversed);
 	}
 
 }

@@ -11,10 +11,10 @@ public class Dynamic_Web_Table_16 {
 
 	public static void main(String[] args) {
 	    
-	     // Dynamic_Web_Table();
-		//Dynamic_Web_Table1();
+	      Dynamic_Web_Table();
+		 //Dynamic_Web_Table1();
 	      
-	 NewTask();
+	     // NewTask();
 	}
 
 	private static void NewTask() {
