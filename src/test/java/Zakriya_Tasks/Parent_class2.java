@@ -11,7 +11,6 @@ public class Parent_class2 extends Child_Class{
 		obj.car();
 		obj.jobs();
 		obj.home2();
-		obj.tatasumo();
         obj.city();
 		int sum = obj.amount;
         System.out.println(sum);

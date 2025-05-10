@@ -1,5 +1,6 @@
 package All_Tasks;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -13,8 +14,8 @@ public class Select_DDL18 {
 	public static void main(String[] args) throws InterruptedException {
 		
 	  //Select_DDL18();
-      //Select_Multiples_DDL();
-        Select_DropDown_List();
+      Select_Multiples_DDL();
+      //Select_DropDown_List();
 	}
 
 	private static void Select_DropDown_List() throws InterruptedException {
@@ -27,12 +28,12 @@ public class Select_DDL18 {
 	 
 		/*List<WebElement> SCC = driver.findElements(By.xpath("//select[@name='userProperties(ssctype)']"));
 		int count = SCC.size();
-		System.out.println("Number of Values : " +count);
+		System.out.println("Number of Values : " +count);*/
 	
         WebElement SCC_board = driver.findElement(By.xpath("//select[@name='userProperties(ssctype)']"));
         Select sc = new Select(SCC_board);
-        sc.selectByIndex(5);
-		Thread.sleep(3000);  */
+        sc.selectByIndex(0);
+		Thread.sleep(3000);  
 		
 	}
 
@@ -40,21 +41,24 @@ public class Select_DDL18 {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get("https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm");
 		
-		WebElement continents = driver.findElement(By.xpath("//select[@name='continents']"));
+		WebElement continents = driver.findElement(By.xpath("//select[@id='state']"));
 		Select sc = new Select(continents);
 		Thread.sleep(3000);
-		sc.selectByVisibleText("Europe");
+		sc.selectByIndex(3);
 		Thread.sleep(3000);
-
-		WebElement SelectCommand_multiple = driver.findElement(By.xpath("//select[@name='selenium_commands']"));
-		Select sc2 = new Select(SelectCommand_multiple);
 		
-		sc2.selectByVisibleText("Switch Commands");
-		Thread.sleep(3000);
-		sc2.selectByVisibleText("Wait Commands");
-		Thread.sleep(3000);
+		driver.quit();
+
+		//WebElement SelectCommand_multiple = driver.findElement(By.xpath("//select[@name='selenium_commands']"));
+		//Select sc2 = new Select(SelectCommand_multiple);
+		
+		//sc2.selectByIndex(1);
+		//Thread.sleep(3000);
+		//sc2.selectByVisibleText("");
+		//Thread.sleep(3000);
 		 
 
 		

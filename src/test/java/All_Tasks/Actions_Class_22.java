@@ -10,10 +10,10 @@ public class Actions_Class_22 {
 
 	public static void main(String[] args) throws InterruptedException {
 	
-		  Right_Click();
+		 // Right_Click();
 		//Double_click();
 		//Hover_Mouse();
-		//Drag_Drop();
+		Drag_Drop();
        
 	}
 
@@ -75,7 +75,7 @@ public class Actions_Class_22 {
 		
 		//Action class performing_Double click
 		Actions sc = new Actions(driver);
-		sc.doubleClick(clickMe_Button).build().perform();
+		//sc.doubleClick(clickMe_Button).build().perform();
 		
 		Thread.sleep(7000);
 		driver.quit();

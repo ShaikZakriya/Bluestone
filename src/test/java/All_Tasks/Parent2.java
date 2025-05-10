@@ -9,7 +9,7 @@ public class Parent2 extends Child_Class{
 		obj.car();
 		obj.jobs();
 		obj.home2();
-		obj.tatasumo();
+		obj.tatanexon();
         obj.city();
 		int sum = obj.amount;
         System.out.println(sum);
@@ -19,14 +19,14 @@ public class Parent2 extends Child_Class{
 
     public static void home2() {
 		
-		System.out.println("Home inside a village with 10acre");
+		System.out.println("Home inside a village");
    
 	
 	}
 	
-     public static void tatasumo() {
+     public static void tatanexon() {
     	 
-    	 System.out.println("Tata sumo cars 30");
+    	 System.out.println("Tata Nexon");
      }
 }
 	

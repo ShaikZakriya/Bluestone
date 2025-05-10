@@ -1,11 +1,46 @@
 package XYZ_TASKS;
 
+import java.util.ArrayList;
+
 public class ARRAYS {
 
 	public static void main(String[] args) {
 		
-		Array();
+		//Array();
+		Arraylist();
 
+	}
+
+	private static void Arraylist() {
+		
+    ArrayList<String> a = new ArrayList<String>();
+		
+		a.add("Shaik");
+		a.add("Shaik Zakriya");
+		a.add("Academy");
+		a.add("Manual Testing");
+		a.add("Coding");
+		a.add("Cricket");
+		a.remove(0); 
+		
+		//System.out.println(a.get(3));
+		
+			
+		    for (int i =0; i<a.size(); i++)
+			{
+				System.out.println(a.get(i));
+			}   
+		
+		
+	/*	for (int i =0; i<=a.size(); i++)
+		{
+			if(a.get(i).equals("Academy"))
+					
+			{
+				  System.out.println("Academy is found: " + i);
+				  break;
+			}
+		}*/
 	}
 
 	private static void Array() {

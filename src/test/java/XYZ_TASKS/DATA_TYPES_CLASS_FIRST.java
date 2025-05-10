@@ -7,11 +7,11 @@ public class DATA_TYPES_CLASS_FIRST {
 	public static void main(String[] args) {
 		
 		//ALL_DATA_TYPES();
-		//Arrays();
+		 // Arrays();
 		//if_else();
-		//Arraylist();
+		  Arraylist();
 		//Reverse_String();
-		Strings_In_Java();
+		//Strings_In_Java();
 		
 
 	}
@@ -80,8 +80,19 @@ public class DATA_TYPES_CLASS_FIRST {
 			}   
 			
 		*/
+		for (int i =0; i<=a.size(); i++)
+		{
+			if(a.get(i).equals("Academy"))
+					
+			{
+				  System.out.println("Academy is found: " + i);
+				  break;
+			}
+		}
 		
-		System.out.println(a.contains("Coding"));
+		
+		
+		//System.out.println(a.contains("Coding"));
 	}
 
 	private static void if_else() {
@@ -110,19 +121,19 @@ public class DATA_TYPES_CLASS_FIRST {
 		//Now i am assinging the values here
 		int [] arr1 = {1,2,3,4,5};
 		
-		System.out.println(arr1[1]);
+		//System.out.println(arr1[1]);
 		
 		
 		//if we want to print total values then we can used for loop 
-		for (int i =0; i<arr1.length; i++)
+		/*for (int i =0; i<arr1.length; i++)
 		{
 			System.out.println(arr1[i]);
-		}
+		} */
 		
 		
 		//2.This is String Array
 	 
-	/*	String [] arr2 = {"Shaik Zakriya"};
+		String [] arr2 = {"Shaik Zakriya"};
 		
 	    for (int i =0; i<arr2.length; i++)
 		{
@@ -131,7 +142,7 @@ public class DATA_TYPES_CLASS_FIRST {
 		}    
 		
 		
-		//3.Enchanced for loop is easy method 
+	/*	//3.Enchanced for loop is easy method 
 		
 		for (String s: arr2)
 		{

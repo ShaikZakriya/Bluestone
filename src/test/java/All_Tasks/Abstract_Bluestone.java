@@ -19,7 +19,7 @@ public class Abstract_Bluestone {
 		//Implemented Method
 	    public static void BankBenefits() {
 				
-		System.out.println("6% of interedt home loan");
+		System.out.println("6% of home loan");
 		System.out.println("10% fee for credit card");
 			
 		}
